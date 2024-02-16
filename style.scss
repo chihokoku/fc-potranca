@@ -1,0 +1,103 @@
+@charset "UTF-8";
+img{
+  max-width: 100%;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+header{
+  width: 100%;
+  .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 70px;
+    margin: 0 auto;
+    .logo{
+      display: flex;
+      align-items: center;
+      h1{
+        margin-left: 10px;
+      }
+      .img{
+        width: 50px;
+        img{
+          margin-top: 10px;
+        }
+      }
+    }
+    nav{
+      ul{
+        display: flex;
+        li{
+          list-style: none;
+        }
+        .nav-item{
+          margin-right:30px ;
+        }
+      }
+    }
+  }
+}
+main{
+  .mainvisual{
+    img{
+      width: 100%;
+    }
+  }
+  .concept{
+    width: 80%;
+    margin: 70px auto;
+    text-align: center;
+    h2{
+      margin-bottom: 20px;
+    }
+    .text{
+      p{
+        text-align: center;
+      }
+    }
+  }
+  .news{
+    max-width: 1240px;
+    padding: 0 20px;
+    margin: 0 auto;
+    h2{
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .grid{
+      display: grid;
+      gap: 26px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      .item{
+        transition: all 0.3s ease;
+        box-shadow: 0 0 8px 4px #ccc;
+        .item-content{
+          padding: 30px;
+        }
+      }
+    }
+  }
+  .sponsor{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    h2{
+      margin-bottom: 20px;
+    }
+    .sponsor-item{
+      width: 400px;
+      margin: 0 auto 30px;
+      box-shadow: 0 0 8px 4px #ccc;
+      img{
+        width: 100%;
+        vertical-align: bottom;
+      }
+    }
+  }
+}
