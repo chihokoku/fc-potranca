@@ -79,6 +79,16 @@ main .news .grid .item {
 main .news .grid .item .item-content {
   padding: 30px;
 }
+main .application {
+  background-color: aqua;
+  display: flex;
+}
+main .application .mark {
+  width: 30%;
+}
+main .application h2 {
+  text-align: center;
+}
 main .sponsor {
   width: 70%;
   margin: 0 auto;
