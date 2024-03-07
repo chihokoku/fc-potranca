@@ -1,108 +1,123 @@
-img {
-  max-width: 100%;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-header {
-  width: 100%;
-}
-header .inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  height: 70px;
-  margin: 0 auto;
-}
-header .inner .logo {
-  display: flex;
-  align-items: center;
-}
-header .inner .logo h1 {
-  margin-left: 10px;
-}
-header .inner .logo .img {
-  width: 50px;
-}
-header .inner .logo .img img {
-  margin-top: 10px;
-}
-header .inner nav ul {
-  display: flex;
-}
-header .inner nav ul li {
-  list-style: none;
-}
-header .inner nav ul .nav-item {
-  margin-right: 30px;
-}
-
-main .mainvisual img {
-  width: 100%;
-}
-main .concept {
-  width: 80%;
-  margin: 70px auto;
-  text-align: center;
-}
-main .concept h2 {
-  margin-bottom: 20px;
-}
-main .concept .text p {
-  text-align: center;
-}
-main .news {
-  max-width: 1240px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
-main .news h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-main .news .grid {
-  display: grid;
-  gap: 26px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-main .news .grid .item {
-  transition: all 0.3s ease;
-  box-shadow: 0 0 8px 4px #ccc;
-}
-main .news .grid .item .item-content {
-  padding: 30px;
-}
-main .application {
-  background-color: aqua;
-  display: flex;
-}
-main .application .mark {
-  width: 30%;
-}
-main .application h2 {
-  text-align: center;
-}
-main .sponsor {
-  width: 70%;
-  margin: 0 auto;
-  text-align: center;
-}
-main .sponsor h2 {
-  margin-bottom: 20px;
-}
-main .sponsor .sponsor-item {
-  width: 400px;
-  margin: 0 auto 30px;
-  box-shadow: 0 0 8px 4px #ccc;
-}
-main .sponsor .sponsor-item img {
-  width: 100%;
-  vertical-align: bottom;
+@charset "UTF-8";
+@media screen and (max-width: 768px) {
+  img {
+    max-width: 100%;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  header {
+    width: 100%;
+  }
+  header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  header .inner .logo {
+    display: flex;
+    align-items: center;
+  }
+  header .inner .logo h1 {
+    margin-left: 10px;
+  }
+  header .inner .logo .img {
+    width: 40px;
+  }
+  header .inner .logo .img img {
+    margin-top: 10px;
+  }
+  header .inner .burger {
+    width: 50px;
+    height: 50px;
+    position: relative;
+  }
+  header .inner .burger span {
+    display: block; /*これないと横棒が表示されない*/
+    width: 80%;
+    height: 3px;
+    position: absolute;
+    background-color: rgb(58, 58, 58);
+    border-radius: 30px;
+  }
+  header .inner .burger span:nth-child(1) {
+    top: 10px;
+    transition: all 0.5s;
+  }
+  header .inner .burger span:nth-child(2) {
+    top: 23px;
+  }
+  header .inner .burger span:nth-child(3) {
+    bottom: 10px;
+    transition: all 0.5s;
+  }
+  header .inner .burger-open span:nth-child(1) {
+    top: 25px;
+    transform: rotate(-225deg);
+    transition: all 0.5s;
+  }
+  header .inner .burger-open span:nth-child(2) {
+    opacity: 0;
+  }
+  header .inner .burger-open span:nth-child(3) {
+    bottom: 22px;
+    transform: rotate(225deg);
+    transition: all 0.5s;
+  }
+  .burger-nav {
+    display: none;
+  }
+  .burger-nav-open {
+    display: block;
+  }
+  main .mainvisual img {
+    width: 100%;
+  }
+  main .concept {
+    width: 80%;
+    margin: 70px auto;
+    text-align: center;
+  }
+  main .concept h2 {
+    margin-bottom: 20px;
+  }
+  main .concept .text p {
+    text-align: center;
+  }
+  main .news {
+    max-width: 1240px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  main .news h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  main .news .grid {
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  main .news .grid .item {
+    transition: all 0.3s ease;
+    box-shadow: 0 0 8px 4px #ccc;
+  }
+  main .news .grid .item .item-content {
+    padding: 30px;
+  }
+  main .application {
+    background-color: aqua;
+    display: flex;
+  }
+  main .application .mark {
+    width: 30%;
+  }
+  main .application h2 {
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */

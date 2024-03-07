@@ -1,52 +1,95 @@
 @charset "UTF-8";
-img{
-  max-width: 100%;
-}
-li{
-  list-style: none;
-}
-a{
-  text-decoration: none;
-}
-@media screen and (min-width:768px) {
-  
-}
-header{
-  width: 100%;
-  .inner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    height: 70px;
-    margin: 0 auto;
-    .logo{
+@media screen and (max-width:768px) {
+  img{
+    max-width: 100%;
+  }
+  li{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  header{
+    width: 100%;
+    .inner{
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      h1{
-        margin-left: 10px;
-      }
-      .img{
-        width: 50px;
-        img{
-          margin-top: 10px;
-        }
-      }
-    }
-    nav{
-      ul{
+      width: 90%;
+      margin: 0 auto;
+      .logo{
         display: flex;
-        li{
-          list-style: none;
+        align-items: center;
+        h1{
+          margin-left: 10px;
         }
-        .nav-item{
-          margin-right:30px ;
+        .img{
+          width: 40px;
+          img{
+            margin-top: 10px;
+          }
         }
+      }
+     .burger{
+        // display: block;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        span{
+          display: block; /*これないと横棒が表示されない*/
+          width: 80%;
+          height: 3px;
+          position: absolute;
+          background-color: rgb(58, 58, 58);
+          border-radius: 30px;
+          &:nth-child(1){
+            top: 10px;
+            transition: all 0.5s;
+          }
+          &:nth-child(2){
+            top: 23px;
+          }
+          &:nth-child(3){
+            bottom: 10px;
+            transition: all 0.5s;
+          }
+        }
+      }
+
+       // バーガーを×にするクラス
+      .burger-open{
+          span{
+              &:nth-child(1){
+                top: 25px;
+                transform: rotate(-225deg);
+                transition: all 0.5s;
+              }
+              &:nth-child(2){
+                opacity: 0;
+              }
+              &:nth-child(3){
+                bottom: 22px;
+                transform: rotate(225deg);
+                transition: all 0.5s;
+              }
+          }
       }
     }
   }
-}
-main{
+
+  // 最初は非表示(バーガーを押した時に出るnav画面)
+  .burger-nav{
+    display: none;
+  }
+    
+  // バーガーを押した時、このクラスが追加され、navが表示
+  // このクラスは.burger-navよりも下に記述しないと適応されない
+  .burger-nav-open{
+    display: block;
+    // animation: open-burger 1s 0.2s forwards ;
+  }
+
+  main{
   .mainvisual{
     img{
       width: 100%;
@@ -96,21 +139,22 @@ main{
       text-align: center;
     }
   }
-  .sponsor{
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
-    h2{
-      margin-bottom: 20px;
-    }
-    .sponsor-item{
-      width: 400px;
-      margin: 0 auto 30px;
-      box-shadow: 0 0 8px 4px #ccc;
-      img{
-        width: 100%;
-        vertical-align: bottom;
-      }
-    }
+  // .sponsor{
+  //   width: 70%;
+  //   margin: 0 auto;
+  //   text-align: center;
+  //   h2{
+  //     margin-bottom: 20px;
+  //   }
+  //   .sponsor-item{
+  //     width: 400px;
+  //     margin: 0 auto 30px;
+  //     box-shadow: 0 0 8px 4px #ccc;
+  //     img{
+  //       width: 100%;
+  //       vertical-align: bottom;
+  //     }
+  //   }
+  // }
   }
 }
