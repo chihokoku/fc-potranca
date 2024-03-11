@@ -1,5 +1,3 @@
-console.log("Hello");
-
 $(".burger").on("click", function () {
   if ($(".burger-nav").hasClass("burger-nav-open")) {
     $(".burger-nav").removeClass("burger-nav-open"); //navを表示させるクラスを付与
