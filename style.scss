@@ -13,6 +13,13 @@ li {
 a {
   text-decoration: none;
 }
+// 各セクションのタイトルはここで指定
+.section-title {
+  font-family: "Lora", serif;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
 header {
   width: 100%;
   .inner {
@@ -25,6 +32,7 @@ header {
       display: flex;
       align-items: center;
       h1 {
+        font-family: "Lora", serif;
         margin-left: 10px;
       }
       .img {
@@ -100,6 +108,7 @@ header {
     margin-bottom: 20px;
     a {
       font-size: 20px;
+      font-family: "Lora", serif;
       color: white;
       .fa-instagram {
         font-size: 40px;
@@ -144,9 +153,6 @@ main {
       margin: 70px auto;
       padding: 55px 0;
       text-align: center;
-      h2 {
-        margin-bottom: 20px;
-      }
       .text {
         p {
           text-align: center;
@@ -154,25 +160,31 @@ main {
       }
     }
   }
-  .news {
-    max-width: 1240px;
-    padding: 0 20px;
-    margin: 0 auto;
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
+  #news {
+    width: 95%;
+    margin: 0 auto 70px;
     .grid {
       display: grid;
-      gap: 26px;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      grid-template-columns: 170px 170px;
+      // grid-template-rows: 100px 100px;
       .item {
         transition: all 0.3s ease;
         box-shadow: 0 0 8px 4px #ccc;
-        .item-content {
-          padding: 30px;
+        img {
+          width: 100%;
+          vertical-align: bottom;
         }
       }
+    }
+  }
+
+  #schedule {
+    margin-bottom: 70px;
+    .calender {
+      width: 350px;
+      margin: 0 auto;
+      box-shadow: 0 0 8px 4px #ccc;
     }
   }
   .application {

@@ -17,6 +17,13 @@ a {
   text-decoration: none;
 }
 
+.section-title {
+  font-family: "Lora", serif;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 header {
   width: 100%;
 }
@@ -32,6 +39,7 @@ header .inner .logo {
   align-items: center;
 }
 header .inner .logo h1 {
+  font-family: "Lora", serif;
   margin-left: 10px;
 }
 header .inner .logo .img {
@@ -98,6 +106,7 @@ header .inner .burger-open span:nth-child(3) {
 }
 .burger-nav .nav-item a {
   font-size: 20px;
+  font-family: "Lora", serif;
   color: white;
 }
 .burger-nav .nav-item a .fa-instagram {
@@ -137,32 +146,33 @@ main #concept .concept-wrapper {
   padding: 55px 0;
   text-align: center;
 }
-main #concept .concept-wrapper h2 {
-  margin-bottom: 20px;
-}
 main #concept .concept-wrapper .text p {
   text-align: center;
 }
-main .news {
-  max-width: 1240px;
-  padding: 0 20px;
-  margin: 0 auto;
+main #news {
+  width: 95%;
+  margin: 0 auto 70px;
 }
-main .news h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-main .news .grid {
+main #news .grid {
   display: grid;
-  gap: 26px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  grid-template-columns: 170px 170px;
 }
-main .news .grid .item {
+main #news .grid .item {
   transition: all 0.3s ease;
   box-shadow: 0 0 8px 4px #ccc;
 }
-main .news .grid .item .item-content {
-  padding: 30px;
+main #news .grid .item img {
+  width: 100%;
+  vertical-align: bottom;
+}
+main #schedule {
+  margin-bottom: 70px;
+}
+main #schedule .calender {
+  width: 350px;
+  margin: 0 auto;
+  box-shadow: 0 0 8px 4px #ccc;
 }
 main .application {
   background-color: aqua;
