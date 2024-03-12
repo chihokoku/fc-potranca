@@ -127,15 +127,20 @@ main .mask-open {
 main .mainvisual img {
   width: 100%;
 }
-main .concept {
+main #concept {
+  background-image: url("img/concept-image.png");
+  background-size: cover;
+}
+main #concept .concept-wrapper {
   width: 80%;
   margin: 70px auto;
+  padding: 55px 0;
   text-align: center;
 }
-main .concept h2 {
+main #concept .concept-wrapper h2 {
   margin-bottom: 20px;
 }
-main .concept .text p {
+main #concept .concept-wrapper .text p {
   text-align: center;
 }
 main .news {

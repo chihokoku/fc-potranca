@@ -136,16 +136,21 @@ main {
       width: 100%;
     }
   }
-  .concept {
-    width: 80%;
-    margin: 70px auto;
-    text-align: center;
-    h2 {
-      margin-bottom: 20px;
-    }
-    .text {
-      p {
-        text-align: center;
+  #concept {
+    background-image: url("img/concept-image.png");
+    background-size: cover;
+    .concept-wrapper {
+      width: 80%;
+      margin: 70px auto;
+      padding: 55px 0;
+      text-align: center;
+      h2 {
+        margin-bottom: 20px;
+      }
+      .text {
+        p {
+          text-align: center;
+        }
       }
     }
   }
