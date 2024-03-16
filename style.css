@@ -185,6 +185,9 @@ main #sponsor .sponsor-item {
 main #sponsor .sponsor-item img {
   box-shadow: 0 0 8px 4px #ccc;
 }
+main #sponsor .sponsor-item :hover {
+  opacity: 0.8;
+}
 main #contact {
   height: 370px;
   margin-bottom: 70px;

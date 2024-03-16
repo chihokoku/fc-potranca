@@ -199,6 +199,9 @@ main {
       img {
         box-shadow: 0 0 8px 4px #ccc;
       }
+      :hover {
+        opacity: 0.8;
+      }
     }
   }
 
