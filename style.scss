@@ -17,6 +17,7 @@ a {
 .section-title {
   font-family: "Lora", serif;
   font-weight: 500;
+  font-size: 30px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -33,6 +34,7 @@ header {
       align-items: center;
       h1 {
         font-family: "Lora", serif;
+        // font-weight: 500;
         margin-left: 10px;
       }
       .img {
@@ -148,9 +150,10 @@ main {
   #concept {
     background-image: url("img/concept-image.png");
     background-size: cover;
+    box-shadow: 0 0 8px 4px #ccc;
     .concept-wrapper {
       width: 80%;
-      margin: 70px auto;
+      margin: 30px auto 70px;
       padding: 55px 0;
       text-align: center;
       .text {
@@ -160,6 +163,7 @@ main {
       }
     }
   }
+
   #news {
     width: 95%;
     margin: 0 auto 70px;
@@ -187,31 +191,80 @@ main {
       box-shadow: 0 0 8px 4px #ccc;
     }
   }
-  .application {
-    background-color: aqua;
-    display: flex;
-    .mark {
-      width: 30%;
-    }
-    h2 {
-      text-align: center;
+
+  #sponsor {
+    margin-bottom: 70px;
+    .sponsor-item {
+      margin-bottom: 20px;
+      img {
+        box-shadow: 0 0 8px 4px #ccc;
+      }
+      :hover {
+        opacity: 0.8;
+      }
     }
   }
-  // .sponsor{
-  //   width: 70%;
-  //   margin: 0 auto;
-  //   text-align: center;
-  //   h2{
-  //     margin-bottom: 20px;
-  //   }
-  //   .sponsor-item{
-  //     width: 400px;
-  //     margin: 0 auto 30px;
-  //     box-shadow: 0 0 8px 4px #ccc;
-  //     img{
-  //       width: 100%;
-  //       vertical-align: bottom;
-  //     }
-  //   }
-  // }
+
+  #contact {
+    height: 370px;
+    margin-bottom: 70px;
+    padding-top: 50px;
+    position: relative;
+    .bk-img {
+      width: 85%;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      position: absolute;
+      opacity: 0.1;
+      z-index: -5;
+    }
+    .contact-inner {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      .btn {
+        width: 80%;
+        margin: 30px auto 0;
+        box-shadow: 0 0 8px 4px #ccc;
+        border-radius: 10px;
+        img {
+          width: 100%;
+          vertical-align: bottom;
+          border-radius: 10px;
+        }
+      }
+      :hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+footer {
+  padding-top: 20px;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    .mark {
+      width: 50px;
+    }
+    h2 {
+      font-family: "Lora", serif;
+      font-weight: 500;
+      font-size: 30px;
+      color: white;
+    }
+    .logo {
+      width: 50px;
+    }
+  }
 }

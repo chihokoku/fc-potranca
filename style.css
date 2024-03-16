@@ -20,6 +20,7 @@ a {
 .section-title {
   font-family: "Lora", serif;
   font-weight: 500;
+  font-size: 30px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -139,10 +140,11 @@ main .mainvisual img {
 main #concept {
   background-image: url("img/concept-image.png");
   background-size: cover;
+  box-shadow: 0 0 8px 4px #ccc;
 }
 main #concept .concept-wrapper {
   width: 80%;
-  margin: 70px auto;
+  margin: 30px auto 70px;
   padding: 55px 0;
   text-align: center;
 }
@@ -174,13 +176,77 @@ main #schedule .calender {
   margin: 0 auto;
   box-shadow: 0 0 8px 4px #ccc;
 }
-main .application {
-  background-color: aqua;
-  display: flex;
+main #sponsor {
+  margin-bottom: 70px;
 }
-main .application .mark {
-  width: 30%;
+main #sponsor .sponsor-item {
+  margin-bottom: 20px;
 }
-main .application h2 {
+main #sponsor .sponsor-item img {
+  box-shadow: 0 0 8px 4px #ccc;
+}
+main #sponsor .sponsor-item :hover {
+  opacity: 0.8;
+}
+main #contact {
+  height: 370px;
+  margin-bottom: 70px;
+  padding-top: 50px;
+  position: relative;
+}
+main #contact .bk-img {
+  width: 85%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  opacity: 0.1;
+  z-index: -5;
+}
+main #contact .contact-inner {
+  width: 80%;
+  margin: 0 auto;
   text-align: center;
+}
+main #contact .contact-inner .btn {
+  width: 80%;
+  margin: 30px auto 0;
+  box-shadow: 0 0 8px 4px #ccc;
+  border-radius: 10px;
+}
+main #contact .contact-inner .btn img {
+  width: 100%;
+  vertical-align: bottom;
+  border-radius: 10px;
+}
+main #contact .contact-inner :hover {
+  opacity: 0.9;
+}
+
+footer {
+  padding-top: 20px;
+  background-color: #000;
+  color: white;
+  text-align: center;
+}
+footer .footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+}
+footer .footer-inner .mark {
+  width: 50px;
+}
+footer .footer-inner h2 {
+  font-family: "Lora", serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: white;
+}
+footer .footer-inner .logo {
+  width: 50px;
 }/*# sourceMappingURL=style.css.map */
