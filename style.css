@@ -20,6 +20,7 @@ a {
 .section-title {
   font-family: "Lora", serif;
   font-weight: 500;
+  font-size: 30px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -142,7 +143,7 @@ main #concept {
 }
 main #concept .concept-wrapper {
   width: 80%;
-  margin: 70px auto;
+  margin: 30px auto 70px;
   padding: 55px 0;
   text-align: center;
 }
@@ -174,13 +175,33 @@ main #schedule .calender {
   margin: 0 auto;
   box-shadow: 0 0 8px 4px #ccc;
 }
-main .application {
-  background-color: aqua;
-  display: flex;
+main #sponsor {
+  margin-bottom: 70px;
 }
-main .application .mark {
-  width: 30%;
+main #sponsor img {
+  box-shadow: 0 0 8px 4px #ccc;
 }
-main .application h2 {
+
+footer {
+  padding-top: 30px;
+  background-color: #000;
+  color: white;
   text-align: center;
+}
+footer .footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+}
+footer .footer-inner .mark {
+  width: 50px;
+}
+footer .footer-inner h2 {
+  font-size: 30px;
+  color: white;
+}
+footer .footer-inner .logo {
+  width: 50px;
 }/*# sourceMappingURL=style.css.map */
