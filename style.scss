@@ -194,8 +194,48 @@ main {
 
   #sponsor {
     margin-bottom: 70px;
-    img {
-      box-shadow: 0 0 8px 4px #ccc;
+    .sponsor-item {
+      margin-bottom: 20px;
+      img {
+        box-shadow: 0 0 8px 4px #ccc;
+      }
+    }
+  }
+
+  #contact {
+    height: 370px;
+    margin-bottom: 70px;
+    padding-top: 50px;
+    position: relative;
+    .bk-img {
+      width: 85%;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      position: absolute;
+      opacity: 0.1;
+      z-index: -5;
+    }
+    .contact-inner {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      .btn {
+        width: 80%;
+        margin: 30px auto 0;
+        box-shadow: 0 0 8px 4px #ccc;
+        border-radius: 10px;
+        img {
+          width: 100%;
+          vertical-align: bottom;
+          border-radius: 10px;
+        }
+      }
+      :hover {
+        opacity: 0.9;
+      }
     }
   }
 }
