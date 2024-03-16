@@ -150,6 +150,7 @@ main {
   #concept {
     background-image: url("img/concept-image.png");
     background-size: cover;
+    box-shadow: 0 0 8px 4px #ccc;
     .concept-wrapper {
       width: 80%;
       margin: 30px auto 70px;
@@ -200,7 +201,7 @@ main {
 }
 
 footer {
-  padding-top: 30px;
+  padding-top: 20px;
   background-color: #000;
   color: white;
   text-align: center;
@@ -214,6 +215,8 @@ footer {
       width: 50px;
     }
     h2 {
+      font-family: "Lora", serif;
+      font-weight: 500;
       font-size: 30px;
       color: white;
     }

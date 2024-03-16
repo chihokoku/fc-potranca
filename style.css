@@ -140,6 +140,7 @@ main .mainvisual img {
 main #concept {
   background-image: url("img/concept-image.png");
   background-size: cover;
+  box-shadow: 0 0 8px 4px #ccc;
 }
 main #concept .concept-wrapper {
   width: 80%;
@@ -183,7 +184,7 @@ main #sponsor img {
 }
 
 footer {
-  padding-top: 30px;
+  padding-top: 20px;
   background-color: #000;
   color: white;
   text-align: center;
@@ -199,6 +200,8 @@ footer .footer-inner .mark {
   width: 50px;
 }
 footer .footer-inner h2 {
+  font-family: "Lora", serif;
+  font-weight: 500;
   font-size: 30px;
   color: white;
 }
