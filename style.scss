@@ -164,6 +164,21 @@ main {
     }
   }
 
+  .bg-img {
+    width: 100%;
+    background-image: url(img/bg-img.png);
+    background-size: 600px 900px;
+    background-position: 10% 90%;
+    // height: 980px;
+    // position: absolute;
+    // margin-top: 200px;
+    // overflow: hidden;
+    // z-index: -5;
+    // img {
+    //   overflow: hidden;
+    // }
+  }
+
   #news {
     width: 95%;
     margin: 0 auto 70px;

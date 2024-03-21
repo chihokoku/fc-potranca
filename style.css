@@ -151,6 +151,12 @@ main #concept .concept-wrapper {
 main #concept .concept-wrapper .text p {
   text-align: center;
 }
+main .bg-img {
+  width: 100%;
+  background-image: url(img/bg-img.png);
+  background-size: 600px 900px;
+  background-position: 10% 90%;
+}
 main #news {
   width: 95%;
   margin: 0 auto 70px;
