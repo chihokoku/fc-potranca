@@ -148,7 +148,7 @@ main {
     }
   }
   #concept {
-    background-image: url("img/concept-image.png");
+    background-image: url("img/concept/concept-image.png");
     background-size: cover;
     box-shadow: 0 0 8px 4px #ccc;
     .concept-wrapper {
@@ -166,17 +166,10 @@ main {
 
   .bg-img {
     width: 100%;
+    // ここで馬のロゴを調整
     background-image: url(img/bg-img.png);
     background-size: 600px 900px;
     background-position: 10% 90%;
-    // height: 980px;
-    // position: absolute;
-    // margin-top: 200px;
-    // overflow: hidden;
-    // z-index: -5;
-    // img {
-    //   overflow: hidden;
-    // }
   }
 
   #news {
@@ -186,7 +179,6 @@ main {
       display: grid;
       gap: 20px;
       grid-template-columns: 170px 170px;
-      // grid-template-rows: 100px 100px;
       .item {
         transition: all 0.3s ease;
         box-shadow: 0 0 8px 4px #ccc;
