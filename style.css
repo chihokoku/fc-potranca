@@ -186,7 +186,8 @@ main #sponsor {
   margin-bottom: 70px;
 }
 main #sponsor .sponsor-item {
-  margin-bottom: 20px;
+  width: 85%;
+  margin: 0 auto 20px;
 }
 main #sponsor .sponsor-item img {
   box-shadow: 0 0 8px 4px #ccc;
